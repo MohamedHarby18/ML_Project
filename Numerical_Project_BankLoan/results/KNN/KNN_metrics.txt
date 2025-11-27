@@ -1,0 +1,23 @@
+Model: K-Nearest Neighbors (KNN)
+Hyperparameters: K = 5 (Selected via Loss Curve)
+
+--------------------------
+PERFORMANCE METRICS
+--------------------------
+Accuracy:        96.10%
+AUC Score:       0.963
+
+--------------------------
+CONFUSION MATRIX RAW COUNTS
+--------------------------
+True Negatives (Correct Rejection):  889
+False Positives (False Alarm):       6
+False Negatives (Missed Loan):       33
+True Positives (Caught Loan):        72
+
+--------------------------
+KEY TAKEAWAY
+--------------------------
+KNN is the superior model for this business case.
+It correctly identified more than DOUBLE the number of loan customers (72 vs 34)
+compared to Linear Regression, while keeping false alarms very low.
