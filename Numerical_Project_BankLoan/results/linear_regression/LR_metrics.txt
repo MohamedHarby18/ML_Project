@@ -4,7 +4,7 @@ Threshold: 0.5 (Predictions > 0.5 are Class 1)
 --------------------------
 PERFORMANCE METRICS
 --------------------------
-Accuracy:        92.50%
+Accuracy:        92.40%
 AUC Score:       0.967
 
 --------------------------
@@ -12,11 +12,12 @@ CONFUSION MATRIX RAW COUNTS
 --------------------------
 True Negatives (Correct Rejection):  891
 False Positives (False Alarm):       4
-False Negatives (Missed Loan):       71
-True Positives (Caught Loan):        34
+False Negatives (Missed Loan):       72
+True Positives (Caught Loan):        33
 
 --------------------------
 KEY TAKEAWAY
 --------------------------
-The model is very conservative. It rarely gives false alarms (only 4), 
-but it misses a large number of actual loan customers (71 misses).
+The model is extremely conservative. It has near-perfect precision (only 4 false alarms), 
+but it struggles significantly with recall, missing 72 actual loan customers. 
+Outlier capping did not significantly change its behavior.
